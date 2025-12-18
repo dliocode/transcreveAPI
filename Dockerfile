@@ -2,7 +2,7 @@ FROM python:3.11-alpine AS builder
 
 WORKDIR /transcreve-api
 
-RUN apk add --no-cache git ffmpeg build-base
+RUN apk add --no-cache git ffmpeg build-base curl wget
 
 COPY . .
 
